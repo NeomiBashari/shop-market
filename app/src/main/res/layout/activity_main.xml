@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background01">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, User!"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Add Product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+
+    <Button
+        android:id="@+id/btnRemoveProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddProduct"
+        android:layout_marginTop="8dp"
+        android:text="Remove Product"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddProduct"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAddProduct"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddProduct" />
+
+    <TextView
+        android:id="@+id/textViewProductCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRemoveProduct"
+        android:layout_marginTop="8dp"
+        android:text="Products: 0"
+        app:layout_constraintEnd_toEndOf="@+id/btnRemoveProduct"
+        app:layout_constraintStart_toStartOf="@+id/btnRemoveProduct"
+        app:layout_constraintTop_toBottomOf="@+id/btnRemoveProduct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
